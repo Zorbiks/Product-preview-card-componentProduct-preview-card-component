@@ -1,0 +1,100 @@
+/* Import Fonts */
+/* montserrat-latin-500-normal */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 500;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/montserrat@latest/latin-500-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/montserrat@latest/latin-500-normal.woff) format('woff');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* montserrat-latin-700-normal */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/montserrat@latest/latin-700-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/montserrat@latest/latin-700-normal.woff) format('woff');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* fraunces-latin-700-normal */
+@font-face {
+	font-family: 'Fraunces';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/fraunces@latest/latin-700-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/fraunces@latest/latin-700-normal.woff) format('woff');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* Colors */
+:root {
+	/* Primary */
+	--dark-cyan: hsl(158, 36%, 37%);
+	--dark-cyan-alt: hsl(156, 42%, 17%);
+	--cream: hsl(30, 38%, 92%);
+
+	/* neutral */
+	--very-dark-blue: hsl(212, 21%, 14%);
+	--dark-grayish-blue: hsl(228, 12%, 48%);
+	--white: hsl(0, 0%, 100%);
+}
+
+/* Global Rules */
+body {
+	font-family: Montserrat;
+	background-color: var(--cream);
+}
+p {
+	font-size: 14px;
+}
+
+/* Styling product card */
+.card {
+	max-width: 604px;
+}
+.card .card-body {
+	padding: 2rem;
+}
+.card .product-type {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: var(--dark-cyan);
+}
+.card .card-title {
+	font-family: Fraunces;
+	font-size: 2rem;
+	line-height: 1;
+	color: var(--very-dark-blue);
+}
+.card .card-text {
+	color: var(--dark-grayish-blue);
+	line-height: 1.6;
+}
+.card .price .current {
+	font-family: Fraunces;
+	font-size: 2rem;
+	color: var(--dark-cyan);
+}
+.card .price .before {
+	font-size: 13px;
+	text-decoration: line-through;
+	color: var(--dark-grayish-blue);
+}
+.card .btn {
+	font-size: 14px;
+	padding: .8rem;
+	color: var(--white);
+	background-color: var(--dark-cyan);
+}
+.card .btn:hover {
+	background-color: var(--dark-cyan-alt);
+}
+
+
+
+
+
